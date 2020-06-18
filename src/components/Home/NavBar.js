@@ -1,5 +1,10 @@
 import React from 'react';
 import { Link ,NavLink } from 'react-router-dom';
+import Hotels from '../hotels/HomePages'
+import flight from '../flight/HomePage'
+import Cars from '../cars/HomePage'
+import Experience from '../explore/HomePage'
+
 
 
 function Header() {
@@ -15,30 +20,30 @@ function Header() {
               <span className="icon-bar" />
               <span className="icon-bar" />
             </button>
-            <a className="navbar-brand" to="/">
+            <NavLink className="navbar-brand" to="/">
               <img src="img/logo.png" alt="Image Alternative text" title="Image Title" />
-            </a>
+            </NavLink>
           </div>
           <div className="collapse navbar-collapse" id="navbar-main">
             <ul className="nav navbar-nav">
               
               <li className="dropdown">
-                <a className="dropdown-toggle" to="/hotels/HomePages.js" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hotels</a>
+                <NavLink className="dropdown-toggle" to="/Hotels"   aria-haspopup="true" aria-expanded="false">Hotels</NavLink>
                </li>
               {/* <li className="dropdown">
                 <a className="dropdown-toggle" href="room-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rooms</a>
                 
               </li> */}
               <li className="dropdown">
-                <a className="dropdown-toggle" href="flight-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Flights</a>
+                <NavLink className="dropdown-toggle" to="/flight" aria-haspopup="true" aria-expanded="false">Flights</NavLink>
                 
               </li>
               <li className="dropdown">
-                <a className="dropdown-toggle" href="car-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cars</a>
+                <NavLink className="dropdown-toggle" to="/Cars" role="button" aria-haspopup="true" aria-expanded="false">Cars</NavLink>
                 
               </li>
               <li className="dropdown">
-                <a className="dropdown-toggle" href="exp-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Experiences</a>
+                <NavLink className="dropdown-toggle" to="/Experience" aria-haspopup="true" aria-expanded="false">Experiences</NavLink>
                 
               </li>
             </ul>

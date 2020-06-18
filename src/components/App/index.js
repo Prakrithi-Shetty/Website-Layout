@@ -3,7 +3,7 @@ import {BrowserRouter,Redirect,Route, Switch} from "react-router-dom";
 
 // import logo from './logo.svg';
 // import './App.css';
-import menu from '../Home/NavBar'
+
 
 import Home from '../Home/index'
 
