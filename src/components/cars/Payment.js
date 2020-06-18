@@ -4,7 +4,7 @@ import React from 'react';
 function CarPayment() {
     return (
         <div>
-        <nav className="navbar navbar-default navbar-inverse navbar-theme" id="main-nav">
+        {/* <nav className="navbar navbar-default navbar-inverse navbar-theme" id="main-nav">
           <div className="container">
             <div className="navbar-inner nav">
               <div className="navbar-header">
@@ -1058,7 +1058,7 @@ function CarPayment() {
               </div>
             </div>
           </div>
-        </nav>
+        </nav> */}
         <div className="theme-page-section theme-page-section-lg">
           <div className="container">
             <div className="row row-col-static row-col-mob-gap" id="sticky-parent" data-gutter={60}>

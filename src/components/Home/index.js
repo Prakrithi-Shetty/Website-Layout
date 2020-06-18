@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link ,NavLink } from 'react-router-dom';
 // import logo from './logo.svg';
 // import './App.css';
 
 function Home() {
 
   return (
-    <div>
+  <div>
     <nav className="navbar navbar-default navbar-inverse navbar-theme navbar-theme-abs navbar-theme-transparent navbar-theme-border" id="main-nav">
       <div className="container">
         <div className="navbar-inner nav">
@@ -16,7 +17,7 @@ function Home() {
               <span className="icon-bar" />
               <span className="icon-bar" />
             </button>
-            <a className="navbar-brand" href="index.html">
+            <a className="navbar-brand" to="/">
               <img src="img/logo.png" alt="Image Alternative text" title="Image Title" />
             </a>
           </div>
@@ -24,7 +25,9 @@ function Home() {
             <ul className="nav navbar-nav">
               
               <li className="dropdown">
-                <a className="dropdown-toggle" href="hotel-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hotels</a>
+                <a className="dropdown-toggle" 
+                // to="/hotels/HomePages.js" 
+                data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hotels</a>
                </li>
               {/* <li className="dropdown">
                 <a className="dropdown-toggle" href="room-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rooms</a>
@@ -649,6 +652,8 @@ function Home() {
         </div>
       </div>
     </nav>
+
+    
     <div className="theme-hero-area">
       <div className="theme-hero-area-bg-wrap">
         <div className="theme-hero-area-bg ws-action" style={{backgroundImage: 'url(./img/back1.png)'}} data-parallax="true" />

@@ -4,7 +4,7 @@ import React from 'react';
 function SearchExp() {
     return (
         <div>
-  <nav className="navbar navbar-default navbar-inverse navbar-theme navbar-theme-abs navbar-theme-transparent navbar-theme-border" id="main-nav">
+  {/* <nav className="navbar navbar-default navbar-inverse navbar-theme navbar-theme-abs navbar-theme-transparent navbar-theme-border" id="main-nav">
     <div className="container">
       <div className="navbar-inner nav">
         <div className="navbar-header">
@@ -1058,7 +1058,7 @@ function SearchExp() {
         </div>
       </div>
     </div>
-  </nav>
+  </nav> */}
   <div className="theme-hero-area front">
     <div className="theme-hero-area-bg-wrap">
       <div className="theme-hero-area-bg" style={{backgroundImage: 'url(./img/1500x400.png)'}} id="hero-banner" />
