@@ -1,469 +1,58 @@
 import React from 'react';
+import { Link ,NavLink } from 'react-router-dom';
 
 
-function menu() {
+function Header() {
     return (
       
-      <nav class="navbar navbar-default navbar-inverse navbar-theme navbar-full" id="main-nav">
-      <div class="container">
-        <div class="navbar-inner nav">
-          <div class="navbar-header">
-            <button class="navbar-toggle collapsed" data-target="#navbar-main" data-toggle="collapse" type="button" area-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+      <nav className="navbar navbar-default navbar-inverse navbar-theme navbar-theme-abs navbar-theme-transparent navbar-theme-border" id="main-nav"  >
+      <div className="container">
+        <div className="navbar-inner nav">
+          <div className="navbar-header">
+            <button className="navbar-toggle collapsed" data-target="#navbar-main" data-toggle="collapse" type="button" area-expanded="false">
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar" />
+              <span className="icon-bar" />
+              <span className="icon-bar" />
             </button>
-            <a class="navbar-brand" href="index.html">
-              <img src="img/logo.png" alt="Image Alternative text" title="Image Title"/>
+            <a className="navbar-brand" to="/">
+              <img src="img/logo.png" alt="Image Alternative text" title="Image Title" />
             </a>
           </div>
-          <div class="collapse navbar-collapse" id="navbar-main">
-            <ul class="nav navbar-nav">
-              <li class="active dropdown">
-                <a class="dropdown-toggle" href="index.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-                <div class="dropdown-menu dropdown-menu-lg">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h5 class="dropdown-meganav-list-title">Homepages</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="index.html">Index 1</a>
-                        </li>
-                        <li>
-                          <a href="index-2.html">Index 2</a>
-                        </li>
-                        <li>
-                          <a href="index-3.html">Index 3</a>
-                        </li>
-                        <li>
-                          <a href="index-4.html">Index 4</a>
-                        </li>
-                        <li>
-                          <a href="index-5.html">Index 5</a>
-                        </li>
-                        <li>
-                          <a href="index-6.html">Index 6</a>
-                        </li>
-                        <li>
-                          <a href="index-7.html">Index 7</a>
-                        </li>
-                        <li>
-                          <a href="index-8.html">Index 8</a>
-                        </li>
-                        <li>
-                          <a href="index-9.html">Index 9</a>
-                        </li>
-                        <li>
-                          <a href="index-10.html">Index 10</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <h5 class="dropdown-meganav-list-title">Misc</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="blog.html">Blog</a>
-                        </li>
-                        <li>
-                          <a href="blog-post.html">Blog Post</a>
-                        </li>
-                        <li>
-                          <a href="404.html">404</a>
-                        </li>
-                        <li>
-                          <a href="about-us.html">About Us</a>
-                        </li>
-                        <li>
-                          <a href="contact.html">Contact</a>
-                        </li>
-                        <li>
-                          <a href="login.html">Login</a>
-                        </li>
-                        <li>
-                          <a href="login-2.html">Login 2</a>
-                        </li>
-                        <li>
-                          <a href="register.html">Register</a>
-                        </li>
-                        <li>
-                          <a href="pwd-reset.html">Reset password</a>
-                        </li>
-                        <li>
-                          <a href="payment-success.html">Sucess Payment</a>
-                        </li>
-                        <li>
-                          <a href="coming-soon.html">Coming Soon</a>
-                        </li>
-                        <li>
-                          <a href="loading.html">Loading</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <h5 class="dropdown-meganav-list-title">Country/City</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="index-city-1.html">Index City 1</a>
-                        </li>
-                        <li>
-                          <a href="index-city-2.html">Index City 2</a>
-                        </li>
-                        <li>
-                          <a href="index-city-3.html">Index City 3</a>
-                        </li>
-                        <li>
-                          <a href="index-country-1.html">Index Country 1</a>
-                        </li>
-                        <li>
-                          <a href="index-country-2.html">Index Country 2</a>
-                        </li>
-                        <li>
-                          <a href="index-country-3.html">Index Country 3</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+          <div className="collapse navbar-collapse" id="navbar-main">
+            <ul className="nav navbar-nav">
+              
+              <li className="dropdown">
+                <a className="dropdown-toggle" to="/hotels/HomePages.js" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hotels</a>
+               </li>
+              {/* <li className="dropdown">
+                <a className="dropdown-toggle" href="room-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rooms</a>
+                
+              </li> */}
+              <li className="dropdown">
+                <a className="dropdown-toggle" href="flight-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Flights</a>
+                
               </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" href="hotel-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hotels</a>
-                <div class="dropdown-menu dropdown-menu-xl">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <h5 class="dropdown-meganav-list-title">Homepages</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="hotel-index-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="hotel-index-2.html">Layout 2</a>
-                        </li>
-                        <li>
-                          <a href="hotel-index-3.html">Layout 3</a>
-                        </li>
-                        <li>
-                          <a href="hotel-index-4.html">Layout 4</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <h5 class="dropdown-meganav-list-title">Search Results</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="hotel-results-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="hotel-results-2.html">Layout 2</a>
-                        </li>
-                        <li>
-                          <a href="hotel-results-3.html">Layout 3</a>
-                        </li>
-                        <li>
-                          <a href="hotel-results-4.html">Layout 4</a>
-                        </li>
-                        <li>
-                          <a href="hotel-results-5.html">Layout 5</a>
-                        </li>
-                        <li>
-                          <a href="hotel-results-6.html">Layout 6</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <h5 class="dropdown-meganav-list-title">Hotel Pages</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="hotel-page-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="hotel-page-2.html">Layout 2</a>
-                        </li>
-                        <li>
-                          <a href="hotel-page-3.html">Layout 3</a>
-                        </li>
-                        <li>
-                          <a href="hotel-page-4.html">Layout 4</a>
-                        </li>
-                        <li>
-                          <a href="hotel-page-5.html">Layout 5</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <h5 class="dropdown-meganav-list-title">Payment</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="hotel-payment-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="hotel-payment-2.html">Layout 2</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+              <li className="dropdown">
+                <a className="dropdown-toggle" href="car-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cars</a>
+                
               </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" href="room-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rooms</a>
-                <div class="dropdown-menu dropdown-menu-xl">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <h5 class="dropdown-meganav-list-title">Homepages</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="room-index-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="room-index-2.html">Layout 2</a>
-                        </li>
-                        <li>
-                          <a href="room-index-3.html">Layout 3</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <h5 class="dropdown-meganav-list-title">Search Results</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="room-results-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="room-results-2.html">Layout 2</a>
-                        </li>
-                        <li>
-                          <a href="room-results-3.html">Layout 3</a>
-                        </li>
-                        <li>
-                          <a href="room-results-4.html">Layout 4</a>
-                        </li>
-                        <li>
-                          <a href="room-results-5.html">Layout 5</a>
-                        </li>
-                        <li>
-                          <a href="room-results-6.html">Layout 6</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <h5 class="dropdown-meganav-list-title">Room Pages</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="room-page-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="room-page-2.html">Layout 2</a>
-                        </li>
-                        <li>
-                          <a href="room-page-3.html">Layout 3</a>
-                        </li>
-                        <li>
-                          <a href="room-page-4.html">Layout 4</a>
-                        </li>
-                        <li>
-                          <a href="room-page-5.html">Layout 5</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <h5 class="dropdown-meganav-list-title">Payment</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="room-payment-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="room-payment-2.html">Layout 2</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" href="flight-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Flights</a>
-                <div class="dropdown-menu dropdown-menu-lg">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h5 class="dropdown-meganav-list-title">Homepages</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="flight-index-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="flight-index-2.html">Layout 2</a>
-                        </li>
-                        <li>
-                          <a href="flight-index-3.html">Layout 3</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <h5 class="dropdown-meganav-list-title">Search Results</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="flight-results-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="flight-results-2.html">Layout 2</a>
-                        </li>
-                        <li>
-                          <a href="flight-results-3.html">Layout 3</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <h5 class="dropdown-meganav-list-title">Payment</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="flight-payment-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="flight-payment-2.html">Layout 2</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" href="car-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cars</a>
-                <div class="dropdown-menu dropdown-menu-lg">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h5 class="dropdown-meganav-list-title">Homepages</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="car-index-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="car-index-2.html">Layout 2</a>
-                        </li>
-                        <li>
-                          <a href="car-index-3.html">Layout 3</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <h5 class="dropdown-meganav-list-title">Search Results</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="car-results-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="car-results-2.html">Layout 2</a>
-                        </li>
-                        <li>
-                          <a href="car-results-3.html">Layout 3</a>
-                        </li>
-                        <li>
-                          <a href="car-results-4.html">Layout 4</a>
-                        </li>
-                        <li>
-                          <a href="car-results-5.html">Layout 5</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <h5 class="dropdown-meganav-list-title">Payment</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="car-payment-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="car-payment-2.html">Layout 2</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" href="exp-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Experiences</a>
-                <div class="dropdown-menu dropdown-menu-xl">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <h5 class="dropdown-meganav-list-title">Homepages</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="exp-index-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="exp-index-2.html">Layout 2</a>
-                        </li>
-                        <li>
-                          <a href="exp-index-3.html">Layout 3</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <h5 class="dropdown-meganav-list-title">Search Results</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="exp-results-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="exp-results-2.html">Layout 2</a>
-                        </li>
-                        <li>
-                          <a href="exp-results-3.html">Layout 3</a>
-                        </li>
-                        <li>
-                          <a href="exp-results-4.html">Layout 4</a>
-                        </li>
-                        <li>
-                          <a href="exp-results-5.html">Layout 5</a>
-                        </li>
-                        <li>
-                          <a href="exp-results-6.html">Layout 6</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <h5 class="dropdown-meganav-list-title">Event Pages</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="exp-page-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="exp-page-2.html">Layout 2</a>
-                        </li>
-                        <li>
-                          <a href="exp-page-3.html">Layout 3</a>
-                        </li>
-                        <li>
-                          <a href="exp-page-4.html">Layout 4</a>
-                        </li>
-                        <li>
-                          <a href="exp-page-5.html">Layout 5</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <h5 class="dropdown-meganav-list-title">Payment</h5>
-                      <ul class="dropdown-meganav-list-items">
-                        <li>
-                          <a href="exp-payment-1.html">Layout 1</a>
-                        </li>
-                        <li>
-                          <a href="exp-payment-2.html">Layout 2</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+              <li className="dropdown">
+                <a className="dropdown-toggle" href="exp-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Experiences</a>
+                
               </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  <span class="_desk-h">Currency</span>
+            <ul className="nav navbar-nav navbar-right">
+              <li className="dropdown">
+                <a className="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span className="_desk-h">Currency</span>
                   <b>USD</b>
                 </a>
-                <div class="dropdown-menu dropdown-menu-xxl">
-                  <h5 class="dropdown-meganav-select-list-title">Popular Currencies</h5>
-                  <div class="row" data-gutter="10">
-                    <div class="col-md-3">
-                      <ul class="dropdown-meganav-select-list-currency">
+                <div className="dropdown-menu dropdown-menu-xxl">
+                  <h5 className="dropdown-meganav-select-list-title">Popular Currencies</h5>
+                  <div className="row" data-gutter={10}>
+                    <div className="col-md-3">
+                      <ul className="dropdown-meganav-select-list-currency">
                         <li>
                           <a href="#">
                             <span>€</span>Euro
@@ -474,15 +63,15 @@ function menu() {
                             <span>£</span>Pound sterling
                           </a>
                         </li>
-                        <li class="active">
+                        <li className="active">
                           <a href="#">
                             <span>US$</span>U.S. dollar
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="col-md-3">
-                      <ul class="dropdown-meganav-select-list-currency">
+                    <div className="col-md-3">
+                      <ul className="dropdown-meganav-select-list-currency">
                         <li>
                           <a href="#">
                             <span>CAD</span>Canadian dollar
@@ -500,8 +89,8 @@ function menu() {
                         </li>
                       </ul>
                     </div>
-                    <div class="col-md-3">
-                      <ul class="dropdown-meganav-select-list-currency">
+                    <div className="col-md-3">
+                      <ul className="dropdown-meganav-select-list-currency">
                         <li>
                           <a href="#">
                             <span>S$</span>Singapore dollar
@@ -520,11 +109,11 @@ function menu() {
                       </ul>
                     </div>
                   </div>
-                  <hr/>
-                  <h5 class="dropdown-meganav-select-list-title">All Currencies</h5>
-                  <div class="row" data-gutter="10">
-                    <div class="col-md-3">
-                      <ul class="dropdown-meganav-select-list-currency">
+                  <hr />
+                  <h5 className="dropdown-meganav-select-list-title">All Currencies</h5>
+                  <div className="row" data-gutter={10}>
+                    <div className="col-md-3">
+                      <ul className="dropdown-meganav-select-list-currency">
                         <li>
                           <a href="#">
                             <span>AR$</span>Argentine peso
@@ -592,8 +181,8 @@ function menu() {
                         </li>
                       </ul>
                     </div>
-                    <div class="col-md-3">
-                      <ul class="dropdown-meganav-select-list-currency">
+                    <div className="col-md-3">
+                      <ul className="dropdown-meganav-select-list-currency">
                         <li>
                           <a href="#">
                             <span>EGP</span>Egyptian pound
@@ -661,8 +250,8 @@ function menu() {
                         </li>
                       </ul>
                     </div>
-                    <div class="col-md-3">
-                      <ul class="dropdown-meganav-select-list-currency">
+                    <div className="col-md-3">
+                      <ul className="dropdown-meganav-select-list-currency">
                         <li>
                           <a href="#">
                             <span>KWD</span>Kuwaiti dinar
@@ -730,8 +319,8 @@ function menu() {
                         </li>
                       </ul>
                     </div>
-                    <div class="col-md-3">
-                      <ul class="dropdown-meganav-select-list-currency">
+                    <div className="col-md-3">
+                      <ul className="dropdown-meganav-select-list-currency">
                         <li>
                           <a href="#">
                             <span>RUB</span>Russian Ruble
@@ -777,7 +366,7 @@ function menu() {
                             <span>AED</span>U.A.E. dirham
                           </a>
                         </li>
-                        <li class="active">
+                        <li className="active">
                           <a href="#">
                             <span>US$</span>U.S. dollar
                           </a>
@@ -797,231 +386,231 @@ function menu() {
                   </div>
                 </div>
               </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  <span class="_desk-h">Language</span>
-                  <img class="navbar-flag" src="img/flags/USA.png" alt="Image Alternative text" title="Image Title"/>
+              <li className="dropdown">
+                <a className="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span className="_desk-h">Language</span>
+                  <img className="navbar-flag" src="img/flags/USA.png" alt="Image Alternative text" title="Image Title" />
                 </a>
-                <div class="dropdown-menu dropdown-menu-xxl">
-                  <h5 class="dropdown-meganav-select-list-title">Languages</h5>
-                  <div class="row" data-gutter="10">
-                    <div class="col-md-3">
-                      <ul class="dropdown-meganav-select-list-lang">
+                <div className="dropdown-menu dropdown-menu-xxl">
+                  <h5 className="dropdown-meganav-select-list-title">Languages</h5>
+                  <div className="row" data-gutter={10}>
+                    <div className="col-md-3">
+                      <ul className="dropdown-meganav-select-list-lang">
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/UK.png" alt="Image Alternative text" title="Image Title"/>English(UK)
+                            <img src="img/flag_codes/UK.png" alt="Image Alternative text" title="Image Title" />English(UK)
                           </a>
                         </li>
-                        <li class="active">
+                        <li className="active">
                           <a href="#">
-                            <img src="img/flag_codes/US.png" alt="Image Alternative text" title="Image Title"/>English(US)
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img src="img/flag_codes/DE.png" alt="Image Alternative text" title="Image Title"/>Deutsch
+                            <img src="img/flag_codes/US.png" alt="Image Alternative text" title="Image Title" />English(US)
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/NED.png" alt="Image Alternative text" title="Image Title"/>Nederlands
+                            <img src="img/flag_codes/DE.png" alt="Image Alternative text" title="Image Title" />Deutsch
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/FR.png" alt="Image Alternative text" title="Image Title"/>Français
+                            <img src="img/flag_codes/NED.png" alt="Image Alternative text" title="Image Title" />Nederlands
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/SP.png" alt="Image Alternative text" title="Image Title"/>Español
+                            <img src="img/flag_codes/FR.png" alt="Image Alternative text" title="Image Title" />Français
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/ARG.png" alt="Image Alternative text" title="Image Title"/>Español (AR)
+                            <img src="img/flag_codes/SP.png" alt="Image Alternative text" title="Image Title" />Español
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/IT.png" alt="Image Alternative text" title="Image Title"/>Italiano
+                            <img src="img/flag_codes/ARG.png" alt="Image Alternative text" title="Image Title" />Español (AR)
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/PT.png" alt="Image Alternative text" title="Image Title"/>Português (PT)
+                            <img src="img/flag_codes/IT.png" alt="Image Alternative text" title="Image Title" />Italiano
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/BR.png" alt="Image Alternative text" title="Image Title"/>Português (BR)
+                            <img src="img/flag_codes/PT.png" alt="Image Alternative text" title="Image Title" />Português (PT)
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/NR.png" alt="Image Alternative text" title="Image Title"/>Norsk
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <ul class="dropdown-meganav-select-list-lang">
-                        <li>
-                          <a href="#">
-                            <img src="img/flag_codes/FIN.png" alt="Image Alternative text" title="Image Title"/>Suomi
+                            <img src="img/flag_codes/BR.png" alt="Image Alternative text" title="Image Title" />Português (BR)
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/SW.png" alt="Image Alternative text" title="Image Title"/>Svenska
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img src="img/flag_codes/DEN.png" alt="Image Alternative text" title="Image Title"/>Dansk
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img src="img/flag_codes/CZ.png" alt="Image Alternative text" title="Image Title"/>Čeština
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img src="img/flag_codes/HUN.png" alt="Image Alternative text" title="Image Title"/>Magyar
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img src="img/flag_codes/ROM.png" alt="Image Alternative text" title="Image Title"/>Română
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img src="img/flag_codes/JP.png" alt="Image Alternative text" title="Image Title"/>日本語
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img src="img/flag_codes/CN.png" alt="Image Alternative text" title="Image Title"/>简体中文
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img src="img/flag_codes/PL.png" alt="Image Alternative text" title="Image Title"/>Polski
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img src="img/flag_codes/GR.png" alt="Image Alternative text" title="Image Title"/>Ελληνικά
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img src="img/flag_codes/RU.png" alt="Image Alternative text" title="Image Title"/>Русский
+                            <img src="img/flag_codes/NR.png" alt="Image Alternative text" title="Image Title" />Norsk
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="col-md-3">
-                      <ul class="dropdown-meganav-select-list-lang">
+                    <div className="col-md-3">
+                      <ul className="dropdown-meganav-select-list-lang">
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/TUR.png" alt="Image Alternative text" title="Image Title"/>Türkçe
+                            <img src="img/flag_codes/FIN.png" alt="Image Alternative text" title="Image Title" />Suomi
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/BUL.png" alt="Image Alternative text" title="Image Title"/>Български
+                            <img src="img/flag_codes/SW.png" alt="Image Alternative text" title="Image Title" />Svenska
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/ARB.png" alt="Image Alternative text" title="Image Title"/>العربية
+                            <img src="img/flag_codes/DEN.png" alt="Image Alternative text" title="Image Title" />Dansk
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/KOR.png" alt="Image Alternative text" title="Image Title"/>한국어
+                            <img src="img/flag_codes/CZ.png" alt="Image Alternative text" title="Image Title" />Čeština
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/ISR.png" alt="Image Alternative text" title="Image Title"/>עברית
+                            <img src="img/flag_codes/HUN.png" alt="Image Alternative text" title="Image Title" />Magyar
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/LAT.png" alt="Image Alternative text" title="Image Title"/>Latviski
+                            <img src="img/flag_codes/ROM.png" alt="Image Alternative text" title="Image Title" />Română
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/UKR.png" alt="Image Alternative text" title="Image Title"/>Українська
+                            <img src="img/flag_codes/JP.png" alt="Image Alternative text" title="Image Title" />日本語
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/IND.png" alt="Image Alternative text" title="Image Title"/>Bahasa Indonesia
+                            <img src="img/flag_codes/CN.png" alt="Image Alternative text" title="Image Title" />简体中文
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/MAL.png" alt="Image Alternative text" title="Image Title"/>Bahasa Malaysia
+                            <img src="img/flag_codes/PL.png" alt="Image Alternative text" title="Image Title" />Polski
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/TAI.png" alt="Image Alternative text" title="Image Title"/>ภาษาไทย
+                            <img src="img/flag_codes/GR.png" alt="Image Alternative text" title="Image Title" />Ελληνικά
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/EST.png" alt="Image Alternative text" title="Image Title"/>Eesti
+                            <img src="img/flag_codes/RU.png" alt="Image Alternative text" title="Image Title" />Русский
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div class="col-md-3">
-                      <ul class="dropdown-meganav-select-list-lang">
+                    <div className="col-md-3">
+                      <ul className="dropdown-meganav-select-list-lang">
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/CRO.png" alt="Image Alternative text" title="Image Title"/>Hrvatski
+                            <img src="img/flag_codes/TUR.png" alt="Image Alternative text" title="Image Title" />Türkçe
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/LIT.png" alt="Image Alternative text" title="Image Title"/>Lietuvių
+                            <img src="img/flag_codes/BUL.png" alt="Image Alternative text" title="Image Title" />Български
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/SLO.png" alt="Image Alternative text" title="Image Title"/>Slovenčina
+                            <img src="img/flag_codes/ARB.png" alt="Image Alternative text" title="Image Title" />العربية
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/SERB.png" alt="Image Alternative text" title="Image Title"/>Srpski
+                            <img src="img/flag_codes/KOR.png" alt="Image Alternative text" title="Image Title" />한국어
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/SLOVE.png" alt="Image Alternative text" title="Image Title"/>Slovenščina
+                            <img src="img/flag_codes/ISR.png" alt="Image Alternative text" title="Image Title" />עברית
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/NAM.png" alt="Image Alternative text" title="Image Title"/>Tiếng Việt
+                            <img src="img/flag_codes/LAT.png" alt="Image Alternative text" title="Image Title" />Latviski
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/PHI.png" alt="Image Alternative text" title="Image Title"/>Filipino
+                            <img src="img/flag_codes/UKR.png" alt="Image Alternative text" title="Image Title" />Українська
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            <img src="img/flag_codes/ICE.png" alt="Image Alternative text" title="Image Title"/>Íslenska
+                            <img src="img/flag_codes/IND.png" alt="Image Alternative text" title="Image Title" />Bahasa Indonesia
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/MAL.png" alt="Image Alternative text" title="Image Title" />Bahasa Malaysia
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/TAI.png" alt="Image Alternative text" title="Image Title" />ภาษาไทย
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/EST.png" alt="Image Alternative text" title="Image Title" />Eesti
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-md-3">
+                      <ul className="dropdown-meganav-select-list-lang">
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/CRO.png" alt="Image Alternative text" title="Image Title" />Hrvatski
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/LIT.png" alt="Image Alternative text" title="Image Title" />Lietuvių
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/SLO.png" alt="Image Alternative text" title="Image Title" />Slovenčina
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/SERB.png" alt="Image Alternative text" title="Image Title" />Srpski
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/SLOVE.png" alt="Image Alternative text" title="Image Title" />Slovenščina
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/NAM.png" alt="Image Alternative text" title="Image Title" />Tiếng Việt
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/PHI.png" alt="Image Alternative text" title="Image Title" />Filipino
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/flag_codes/ICE.png" alt="Image Alternative text" title="Image Title" />Íslenska
                           </a>
                         </li>
                       </ul>
@@ -1029,11 +618,11 @@ function menu() {
                   </div>
                 </div>
               </li>
-              <li class="navbar-nav-item-user dropdown">
-                <a class="dropdown-toggle" href="account.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-user-circle-o navbar-nav-item-user-icon"></i>My Account
+              <li className="navbar-nav-item-user dropdown">
+                <a className="dropdown-toggle" href="account.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i className="fa fa-user-circle-o navbar-nav-item-user-icon" />My Account
                 </a>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li>
                     <a href="account.html">Preferences</a>
                   </li>
@@ -1059,8 +648,9 @@ function menu() {
         </div>
       </div>
     </nav>
+
         
         );
     }
     
-    export default menu;
+    export default Header;
