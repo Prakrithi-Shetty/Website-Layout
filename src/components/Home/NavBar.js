@@ -20,7 +20,7 @@ function Header() {
               <span className="icon-bar" />
               <span className="icon-bar" />
             </button>
-            <NavLink className="navbar-brand" to="/">
+            <NavLink className="navbar-brand" to="/" activeStyle={{color:'red'}}>
               <img src="img/logo.png" alt="Image Alternative text" title="Image Title" />
             </NavLink>
           </div>
@@ -28,22 +28,22 @@ function Header() {
             <ul className="nav navbar-nav">
               
               <li className="dropdown">
-                <NavLink className="dropdown-toggle" to="/Hotels"   aria-haspopup="true" aria-expanded="false">Hotels</NavLink>
+                <NavLink className="dropdown-toggle" to="/Hotels"   aria-haspopup="true"  aria-expanded="false" activeStyle={{color:'red'}} strict>Hotels</NavLink>
                </li>
               {/* <li className="dropdown">
                 <a className="dropdown-toggle" href="room-index-1.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rooms</a>
                 
               </li> */}
               <li className="dropdown">
-                <NavLink className="dropdown-toggle" to="/flight" aria-haspopup="true" aria-expanded="false">Flights</NavLink>
+                <NavLink className="dropdown-toggle" to="/flight" aria-haspopup="true" aria-expanded="false" activeStyle={{color:'red'}} strict>Flights</NavLink>
                 
               </li>
               <li className="dropdown">
-                <NavLink className="dropdown-toggle" to="/Cars" role="button" aria-haspopup="true" aria-expanded="false">Cars</NavLink>
+                <NavLink className="dropdown-toggle" to="/Cars" role="button" aria-haspopup="true" aria-expanded="false" activeStyle={{color:'red'}}>Cars</NavLink>
                 
               </li>
               <li className="dropdown">
-                <NavLink className="dropdown-toggle" to="/Experience" aria-haspopup="true" aria-expanded="false">Experiences</NavLink>
+                <NavLink className="dropdown-toggle" to="/Experience" aria-haspopup="true" aria-expanded="false" activeStyle={{color:'red'}}>Experiences</NavLink>
                 
               </li>
             </ul>
