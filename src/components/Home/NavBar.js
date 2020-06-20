@@ -21,7 +21,7 @@ function Header() {
               <span className="icon-bar" />
             </button>
             <NavLink className="navbar-brand" to="/" activeStyle={{color:'red'}}>
-              <img src="img/logo.png" alt="Image Alternative text" title="Image Title" />
+              <img src="" alt="Brand Logo" title="SaiWorld" />
             </NavLink>
           </div>
           <div className="collapse navbar-collapse" id="navbar-main">
