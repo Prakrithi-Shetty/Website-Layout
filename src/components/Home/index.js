@@ -478,7 +478,7 @@ function Home() {
                 <h2 className="theme-hero-text-title">Welcome to
                   <b>Bookify</b>
                 </h2>
-                <p className="theme-hero-text-subtitle">Bookify is booking service, which is striving to get the best prices for you with exellent support. We offer best deals for hotels, vacation rentals, flights, car rentals, and travel experiences.</p>
+                <p className="theme-hero-text-subtitle">SaiWorld is booking service, which is striving to get the best prices for you with exellent support. We offer best deals for hotels, vacation rentals, flights, car rentals, and travel experiences.</p>
               </div>
             </div>
           </div>
@@ -697,7 +697,7 @@ function Home() {
           <div className="col-md-3">
             <div className="theme-footer-section theme-footer-">
               <a className="theme-footer-brand _mb-mob-30" href="#">
-                <img src="img/logo-black.png" alt="Image Alternative text" title="Image Title" />
+                <img src="" alt="Image Alternative text" title="Brand Logo" />
               </a>
               <div className="theme-footer-brand-text">
                 <p>Magnis porttitor penatibus dapibus ad molestie massa libero tristique auctor fringilla aliquet dolor hac leo</p>
@@ -709,10 +709,10 @@ function Home() {
             <div className="row">
               <div className="col-md-4">
                 <div className="theme-footer-section theme-footer-">
-                  <h5 className="theme-footer-section-title">Travel Mate</h5>
+                  <h5 className="theme-footer-section-title">Saiworld</h5>
                   <ul className="theme-footer-section-list">
                     <li>
-                      <a href="#">About Travel Mate</a>
+                      <a href="#">About Us</a>
                     </li>
                     <li>
                       <a href="#">Mobile App</a>
@@ -815,8 +815,8 @@ function Home() {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <p className="theme-copyright-text">Copyright © 2018
-              <a href="#">Bookify</a>. All rights reserved.
+            <p className="theme-copyright-text">Copyright © 2020
+              <a href="#">SaiWorld</a>. All rights reserved.
             </p>
           </div>
           <div className="col-md-6">
