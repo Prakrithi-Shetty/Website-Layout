@@ -5,7 +5,7 @@ import {BrowserRouter} from "react-router-dom";
 import './index.css';
 import App from './components/App';
 import Header from './components/Home/NavBar'
-
+import Footer from './components/Home/Footer'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -13,6 +13,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Header />
     <App />
+    <Footer/>
     </BrowserRouter>,
   document.getElementById('root')
 );
