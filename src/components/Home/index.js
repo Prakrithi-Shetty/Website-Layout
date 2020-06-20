@@ -476,7 +476,7 @@ function Home() {
             <div className="theme-hero-text theme-hero-text-center">
               <div className="theme-hero-text-header">
                 <h2 className="theme-hero-text-title">Welcome to
-                  <b>Bookify</b>
+                  <b>Saiworld</b>
                 </h2>
                 <p className="theme-hero-text-subtitle">SaiWorld is booking service, which is striving to get the best prices for you with exellent support. We offer best deals for hotels, vacation rentals, flights, car rentals, and travel experiences.</p>
               </div>
